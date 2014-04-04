@@ -1,5 +1,5 @@
-pageData
-========
+Page Data
+=========
 
 A simple script to pull pageData from our pages and display it in a popup. 
 
