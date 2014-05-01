@@ -23,5 +23,6 @@ javascript:(function(){
     win.focus();
   } else {
     console.log("You need to allow popups from this domain to use this tool. Look for the window icon with an x in the address bar");
+    alert('You need to allow popups from this domain to use this tool. Look for the window icon with an x in the address bar');
   }
 })();
