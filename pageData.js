@@ -22,7 +22,6 @@ javascript:(function(){
     win.document.body.innerHTML = "<table>" + html + "</table>";
     win.focus();
   } else {
-    console.log("You need to allow popups from this domain to use this tool. Look for the window icon with an x in the address bar");
-    alert('You need to allow popups from this domain to use this tool. Look for the window icon with an x in the address bar');
+    alert('You need to allow popups from this domain to use this Page Data tool. Look for the window icon with an x in the address bar!');
   }
 })();
