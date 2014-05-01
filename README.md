@@ -3,7 +3,6 @@ Page Data
 
 A simple script to pull pageData from our pages and display it in a popup. 
 
-
 ### How to use?
 
 Add the following to a bookmark in your favourite browers
