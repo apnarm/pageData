@@ -1,6 +1,6 @@
 javascript:(function(){
 
-  this.isFunction = function(functionToCheck) {
+  function isFunction(functionToCheck) {
     var getType = {};
     return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
   }
@@ -19,7 +19,7 @@ javascript:(function(){
   var html = "<h2>Page Data</h2><tr><th>Name</th><th>Value</th></tr>";
 
   for(var prop in pg) {
-    if(prop != "cleanDirtyArray") {
+    if(!isFunction(prop)) {
       html = html + "<tr><td>"+ prop +"</td><td>"+ pg[prop] +"</td></tr>";
     }
   }
