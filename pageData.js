@@ -1,4 +1,11 @@
 javascript:(function(){
+
+  this.isFunction = function(functionToCheck) {
+    var getType = {};
+    return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
+  }
+
+
   var pg = pageData;
   var win = window.open("", "Title", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=780, height=500, top="+(screen.height-600)+", left="+(screen.width-840));
   var style = "body { margin:0; padding: 0; background: #fff; color: #293431; font-family: 'Lucida Sans Unicode', 'Lucida Grande, Sans-Serif'; }";
@@ -25,3 +32,5 @@ javascript:(function(){
     alert('You need to allow popups from this domain to use this Page Data tool. Look for the window icon with an x in the address bar!');
   }
 })();
+
+
