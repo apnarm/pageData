@@ -20,6 +20,7 @@ javascript:(function(){
 
   for(var prop in pg) {
     if(!isFunction(pg[prop])) {
+      console.log(pg[prop])
       html = html + "<tr><td>"+ prop +"</td><td>"+ pg[prop] +"</td></tr>";
     }
   }
