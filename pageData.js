@@ -19,7 +19,7 @@ javascript:(function(){
   var html = "<h2>Page Data</h2><tr><th>Name</th><th>Value</th></tr>";
 
   for(var prop in pg) {
-    if(!isFunction(prop)) {
+    if(!isFunction(pg[prop])) {
       html = html + "<tr><td>"+ prop +"</td><td>"+ pg[prop] +"</td></tr>";
     }
   }
